@@ -121,4 +121,19 @@
     .workspace-leaf {
         padding-right: 0;
     }
+
+    .is-mobile & {
+
+        &.is-pinned {
+
+            & .popover-title {
+                -webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0, #000000 30px);
+                mask-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0, #000000 30px);
+
+                &:after {
+                    display: none;
+                }
+            }
+        }
+    }
 }
